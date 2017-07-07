@@ -1,0 +1,33 @@
+<!DOCKTYPE html>
+<html>
+<head>
+	<title>Coding Dojo | Range Print</title>
+</head>
+<body>
+	<h1>Range Print</h1>
+	<p>Create a function that can take a start point, end point, and skip amount, to print all numbers in the range.</p>
+
+	<p>For example:</p>
+	<p>printRange(2,10, 2);</p>
+	<p>Would Print: </p>
+	<p>2</p>
+	<p>4</p>
+	<p>6</p>
+	<p>8</p>
+
+	<p>(Should go UP TO, but NOT INCLUDING the end point)</p>
+	<script>
+
+	printRange(2,10,2);
+
+	function printRange(startValue, endValue, skipValue)
+	{
+		for(var x = startValue; x<endValue; x = x +skipValue)
+		{
+			console.log(x);
+		}
+	}
+
+	</script>
+</body>
+</html>
